@@ -1,0 +1,53 @@
+{
+  "name": "minimal",
+  "version": "^0.3.1",
+  "description": "@ipare/cli 创建项目",
+  "homepage": "https://ipare.org",
+  "repository": { "type": "git", "url": "https://github.com/ipare/cli" },
+  "keywords": ["ipare"],
+  "bugs": {
+    "url": "https://github.com/ipare/core/issues",
+    "email": "support@hal.wang"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ipare start --mode development --watch",
+    "start": "npm run dev",
+    "build": "ipare build",
+    "lint": "eslint src --ext .ts"
+  },
+  "author": "hal-wang",
+  "license": "MIT",
+  "dependencies": {
+    "@ipare/core": "^1.6.3",
+    "@ipare/filter": "^1.0.13",
+    "@ipare/http": "^1.2.4",
+    "@ipare/inject": "^1.2.3",
+    "@ipare/jwt": "^0.3.8",
+    "@ipare/mva": "^1.5.7",
+    "@ipare/pipe": "^1.3.5",
+    "@ipare/router": "^2.1.9",
+    "@ipare/static": "^1.2.0",
+    "@ipare/swagger": "^1.0.9",
+    "@ipare/validator": "^0.1.1",
+    "@ipare/view": "^1.4.0",
+    "class-validator": "^0.13.2",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@ipare/cli": "^0.3.1",
+    "@ipare/testing": "^0.0.6",
+    "@types/jest": "^28.1.6",
+    "@types/node": "^18.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "ejs": "^3.1.8",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^28.1.3",
+    "prettier": "^2.7.1",
+    "ts-jest": "^28.0.7",
+    "typescript": "^4.7.4"
+  }
+}
